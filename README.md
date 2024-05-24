@@ -37,4 +37,6 @@ Aspectos cumplidos de la actividad propuesta por el profesor:
 
 
 ## Video sustentación:
+Profe en el video no se escucha la  primera parte donde nos presentamos mi compañero y yo (Andres Leonardo Rojas y Daniel Pineda)  explicando las instancias de vm en gcp.  Tenemos 4 instancias, el master,nfs y 2 workers. Todas con ubuntu
+
 https://youtu.be/-hJhIy9vb2w
