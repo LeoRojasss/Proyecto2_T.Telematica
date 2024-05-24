@@ -1,0 +1,36 @@
+  GNU nano 4.8                                           http-ingress.yaml                                                     
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: http-ingress
+  labels:
+    app: wordpress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/use-regex: "true"
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: playlistingpro.store
+    http:
+      paths:
+      - pathType: ImplementationSpecific
+        path: "/"
+        backend:
+          service:
+            name: wordpress
+            port:
+              number: 80
+  - http:
+      paths:
+      - pathType: ImplementationSpecific
+        path: "/.*"
+        backend:
+          service:
+            name: wordpress
+            port:
+              number: 80
+
+
+
+

@@ -1,0 +1,23 @@
+  GNU nano 4.8                                          cluster-issuer.yaml                                                    
+apiVersion: cert-manager.io/v1
+kind: ClusterIssuer
+metadata:
+ name: lets-encrypt
+spec:
+ acme:
+   email: alrojasp@eafit.edu.co
+   server: https://acme-v02.api.letsencrypt.org/directory
+   privateKeySecretRef:
+     # Secret resource that will be used to store the account's private key.
+     name: lets-encrypt-priviate-key
+   # Add a single challenge solver, HTTP01 using nginx
+   solvers:
+   - http01:
+       ingress:
+         class: public
+
+
+
+
+
+

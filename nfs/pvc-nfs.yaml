@@ -1,0 +1,14 @@
+  GNU nano 4.8                                             pvc-nfs.yaml                                                        
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: my-pvc
+spec:
+  storageClassName: nfs-csi
+  accessModes: [ReadWriteOnce]
+  resources:
+    requests:
+      storage: 8Gi
+
+
+
