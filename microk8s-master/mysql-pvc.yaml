@@ -1,0 +1,20 @@
+  GNU nano 4.8                                            mysql-pvc.yaml                                                       
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mysql-pvc
+  labels:
+    app: mysql
+spec:
+  accessModes:
+    - ReadWriteMany
+  storageClassName: nfs-csi
+  resources:
+    requests:
+      storage: 5Gi
+
+
+
+
+
+
