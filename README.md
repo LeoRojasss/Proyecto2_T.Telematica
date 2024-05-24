@@ -33,5 +33,8 @@ Aspectos cumplidos de la actividad propuesta por el profesor:
 
 ## 2. información general de diseño de alto nivel, arquitectura, patrones, mejores prácticas utilizadas.
 
-Video sustentación:
+
+
+
+## Video sustentación:
 https://youtu.be/-hJhIy9vb2w
